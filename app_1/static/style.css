@@ -1,0 +1,32 @@
+body{
+    
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+main{
+    margin: 0 auto;
+    background-color: rgb(163, 134, 97);
+}
+h1{
+    padding: 25;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    font-size: medium;
+    font-weight: bold;
+    margin: 15px 30px;
+}
+p{
+    font-weight: bolder;
+}
+li.corect {
+            color:rgb(2, 201, 9);
+            font-style: oblique;
+}
+footer{
+    background-color: bisque;
+    margin: 0 auto;   
+    font-size: small;
+}
