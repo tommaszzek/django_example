@@ -1,0 +1,17 @@
+{% extends 'szablon.html' %}
+    {% block content %}
+        <h1>Witamy na naszej stronie Quizz!</h1>
+        <p>{{question.text}}</p>
+        {% comment %} <ul>
+            <li>{{question.answers.0.text}}</li>
+            <li>{{question.answers.1.text}}</li>
+            <li>{{question.answers.2.text}}</li>
+            <li>{{question.answers.3.text}}</li>
+        </ul> {% endcomment %}
+        <ul>
+            {%for answers in question.answers %}
+            <li {%if answers.correct %} class="corect" {%endif%}>{{answers.text}}</li>
+            {%endfor%}
+        </ul>
+ 
+    {% endblock %}

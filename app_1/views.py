@@ -5,5 +5,14 @@ from django.shortcuts import render
 # Create your views here.
 def index(request):
     # return HttpResponse('dosik')
-    return render(request,'app_1/dane.html')
+    question={
+        'text':'Co znaczy skrót JS ?',
+        'answers':[{'text':'Zrob swoje','correct':False },
+                   {'text':'Zrob swoje','correct':False  },
+                   {'text':'Java Script','correct':True },
+                   {'text':'Zrob swoje' ,'correct':False }
+                   ]
+    }
+  
+    return render(request,'home.html',{'question':question})
     
